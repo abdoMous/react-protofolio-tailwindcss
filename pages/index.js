@@ -7,16 +7,9 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
-import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import android from "../public/android.png";
 import profilePic from "../public/profile-pic.png";
 import { useState } from "react";
 
@@ -82,6 +75,57 @@ export default function Home() {
           </div>
           <div className=" relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={profilePic} layout="fill" objectFit="cover" />
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Since the beginning of my journey as a Software Developer, I built
+              several apps for me and for startups and collaborated with
+              talanted people to make it accesible and easy to use.
+            </p>
+          </div>
+          <div className="lg:flex gap-10">
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-800 dark:text-white">
+              <Image src={code} width={100} height={100} />
+              <h3 className=" text-lg font-medium pt-8 pb-2">Web3</h3>
+              <p>
+                Creating well unit-tested smart contracts for any EVM
+                blockchains
+              </p>
+              <h4 className="py-4 text-teal-600">Tools</h4>
+              <p className=" text-gray-800 dark:text-white py-1 ">Solidity</p>
+              <p className=" text-gray-800 dark:text-white py-1">Hardhat</p>
+              <p className=" text-gray-800 dark:text-white py-1">Ethers.js</p>
+              <p className=" text-gray-800 dark:text-white py-1">Moralis</p>
+              <p className=" text-gray-800 dark:text-white py-1">IPFS</p>
+              <p className=" text-gray-800 dark:text-white py-1">thegraph</p>
+            </div>
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10  dark:bg-slate-800 dark:text-white">
+              <Image src={design} width={100} height={100} />
+              <h3 className=" text-lg font-medium pt-8 pb-2">Web2</h3>
+              <p>Creating easy to use web apps that interacts with dapps</p>
+              <h4 className="py-4 text-teal-600">Tools</h4>
+              <p className=" text-gray-800 dark:text-white py-1">React</p>
+              <p className=" text-gray-800 dark:text-white py-1">Firebase</p>
+              <p className=" text-gray-800 dark:text-white py-1">Next.js</p>
+              <p className=" text-gray-800 dark:text-white py-1">Tailwindcss</p>
+            </div>
+            <div className=" text-center shadow-lg p-10 rounded-xl my-10  dark:bg-slate-800 dark:text-white">
+              <Image src={android} width={100} height={100} />
+              <h3 className=" text-lg font-medium pt-8 pb-2">Android</h3>
+              <p>Creating ready-to-publish native android apps</p>
+              <h4 className="py-4 text-teal-600">Tools</h4>
+              <p className=" text-gray-800 dark:text-white py-1">Java</p>
+              <p className=" text-gray-800 dark:text-white py-1">
+                Android Studio
+              </p>
+              <p className=" text-gray-800 dark:text-white py-1">Firebase</p>
+              <p className=" text-gray-800 dark:text-white py-1">
+                Material Design
+              </p>
+            </div>
           </div>
         </section>
       </main>
